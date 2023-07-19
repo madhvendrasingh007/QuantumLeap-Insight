@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>QuantumLeap-Insight</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bx-network-chart bx-spin bx-rotate-180' ></i>
+			<span class="text">AdminHub</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="/dashboard-main/index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-inbox icon' ></i>
+					<span class="text">Progress</span>
+					<i class='bx bx-chevron-right icon-right' ></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-chalkboard' ></i>
+					<span class="text">Resources</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="/calendar/index.html">
+					<i class='bx bxs-calendar'></i>
+					<span class="text">Calendar</span>
+				</a>
+			</li>
+			<li>
+				<a href="/leadership-main/leadindex.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Leadership</span>
+				</a>
+			</li>
+			<li class="divider" data-text="consent">Consent</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-envelope'></i>
+					<span class="text">Feedback Form</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-chat' ></i>
+					<span class="text">Chatbot</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<div class="action">
+				<div class="profile" onclick="menuToggle();">
+					<a href="#" class="profile-img">
+						<img src="img/people.png">
+					</a>
+				</div>
+		
+				<div class="menu">
+					<h3>
+						User Account
+						<div>
+							Student
+						</div>
+					</h3>
+					<ul>
+						<li>
+							<i class='bx bxs-user'></i>
+							<a href="#">My Profile</a>
+						</li>
+						<li>
+							<i class='bx bxs-pencil' ></i>
+							<a href="#">Edit Account</a>
+						</li>
+						<li>
+							<i class='bx bxs-conversation' ></i>
+							<a href="#">Comments</a>
+						</li>
+						<li>
+							<i class='bx bx-image' ></i>
+							<a href="/gallery/index.html">Gallery</a>
+						</li>
+						<li>
+							<i class='bx bxs-dollar-circle' ></i>
+							<a href="#">Finance</a>
+						</li>
+						<li>
+							<i class='bx bxs-dollar-circle' ></i>
+							<a href="#">Wallet</a>
+						</li>
+					</ul>
+				</div>
+			
+		</nav>
+		<!-- NAVBAR -->
+
+
+
+
+
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Main</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Calendar</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+
+
+
+			<!-- Main Content -->
+			<div class="container">
+				<div class="left">
+				  <div class="calendar">
+					<div class="month">
+					  <i class="fas fa-angle-left prev"></i>
+					  <div class="date">december 2015</div>
+					  <i class="fas fa-angle-right next"></i>
+					</div>
+					<div class="weekdays">
+					  <div>Sun</div>
+					  <div>Mon</div>
+					  <div>Tue</div>
+					  <div>Wed</div>
+					  <div>Thu</div>
+					  <div>Fri</div>
+					  <div>Sat</div>
+					</div>
+					<div class="days"></div>
+					<div class="goto-today">
+					  <div class="goto">
+						<input type="text" placeholder="mm/yyyy" class="date-input" />
+						<button class="goto-btn">Go</button>
+					  </div>
+					  <button class="today-btn">Today</button>
+					</div>
+				  </div>
+				</div>
+				<div class="right">
+				  <div class="today-date">
+					<div class="event-day">wed</div>
+					<div class="event-date">12th december 2022</div>
+				  </div>
+				  <div class="events"></div>
+				  <div class="add-event-wrapper">
+					<div class="add-event-header">
+					  <div class="title">Add Event</div>
+					  <i class="fas fa-times close"></i>
+					</div>
+					<div class="add-event-body">
+					  <div class="add-event-input">
+						<input type="text" placeholder="Event Name" class="event-name" />
+					  </div>
+					  <div class="add-event-input">
+						<input
+						  type="text"
+						  placeholder="Event Time From"
+						  class="event-time-from"
+						/>
+					  </div>
+					  <div class="add-event-input">
+						<input
+						  type="text"
+						  placeholder="Event Time To"
+						  class="event-time-to"
+						/>
+					  </div>
+					</div>
+					<div class="add-event-footer">
+					  <button class="add-event-btn">Add Event</button>
+					</div>
+				  </div>
+				  
+				  <button class="add-event">
+					<i class='bx bx-plus'></i>
+				  </button>
+
+				</div>
+					
+				
+			  </div>
+			  
+
+			
+
+		
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+	<script src="script.js"></script>
+</body>
+</html>

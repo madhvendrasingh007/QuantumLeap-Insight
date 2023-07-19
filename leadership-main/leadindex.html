@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="leadstyle.css">
+
+	<title>QuantumLeap-Insight</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bx-network-chart bx-spin bx-rotate-180' ></i>
+			<span class="text">AdminHub</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="/dashboard-main/index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-inbox icon' ></i>
+					<span class="text">Progress</span>
+					<i class='bx bx-chevron-right icon-right' ></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="/resources/main.html">
+					<i class='bx bxs-chalkboard' ></i>
+					<span class="text">Resources</span>
+				</a>
+			</li>
+			<li>
+				<a href="/calendar/index.html">
+					<i class='bx bxs-calendar'></i>
+					<span class="text">Calendar</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="/leadership-main/leadindex.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Leadership</span>
+				</a>
+			</li>
+			<li class="divider" data-text="consent">Consent</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-envelope'></i>
+					<span class="text">Feedback Form</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-chat' ></i>
+					<span class="text">Chatbot</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="/login-page/login index.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<div class="action">
+				<div class="profile" onclick="menuToggle();">
+					<a href="#" class="profile-img">
+						<img src="img/people.png">
+					</a>
+				</div>
+		
+				<div class="menu">
+					<h3>
+						User Account
+						<div>
+							Student
+						</div>
+					</h3>
+					<ul>
+						<li>
+							<i class='bx bxs-user'></i>
+							<a href="#">My Profile</a>
+						</li>
+						<li>
+							<i class='bx bxs-pencil' ></i>
+							<a href="#">Edit Account</a>
+						</li>
+						<li>
+							<i class='bx bxs-conversation' ></i>
+							<a href="#">Comments</a>
+						</li>
+						<li>
+							<i class='bx bx-image' ></i>
+							<a href="/gallery/index.html">Gallery</a>
+						</li>
+						<li>
+							<i class='bx bxs-dollar-circle' ></i>
+							<a href="#">Finance</a>
+						</li>
+						<li style="color: red;">
+							<i class='bx bxs-log-out-circle' ></i>
+							<a href="/login-page/login index.html">Logout</a>
+						</li>
+					</ul>
+				</div>
+			
+		</nav>
+		<!-- NAVBAR -->
+
+
+
+
+
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Main</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Leadership</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+
+
+
+			<!-- Main Content -->
+			<div class="container">
+				
+                <div class="content">
+                    <div class="left-col"></div>
+                    <!--Team page Start -->
+                    <div class="main">
+                        <div class="teampage-container">
+                            <!--Team Deails Start -->
+                            <div class="team-details-container">
+                                <div class="team-details-heading">
+                                    <h1>Active Teams Challenge <span>May 12 - June 26<span></h1>
+                                </div>
+                            </div>
+                            <!--Team Deails End -->
+                            <div class="leader-board-tab-container">
+                                <div class="w3-bar">
+                                    <button class="w3-bar-item w3-button tablink active" onclick="openTab(event,'tab1')">Individuals</button>
+                                    <button class="w3-bar-item filter-btn" onclick="openFilterModal()"><img src="http://demo.arkinfotec.in/active-thriving/filter.png"></button>
+                                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'tab2')">Teams</button>
+                                    <button class="w3-bar-item filter-btn" onclick="openFilterModal1()"><img src="http://demo.arkinfotec.in/active-thriving/filter.png"></button>
+                                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'tab3')">Organisation</button>
+                                </div>
+                                <div class="applied-filter-container">
+                                    <div class="filters-tags-container">
+                                        <!-- THIS IS NEW CODE -->
+                                        <span class="w3-tag w3-round">
+                                <a href="#"><i class='bx bx-location-plus' ></i></a> Jaipur
+                              </span>
+                                        <!-- <span class="w3-tag w3-round"><a href="#"><i class="fas fa-times"></i></a> Street name</span> <span class="w3-tag w3-round"><a href="#"><i class="fas fa-times"></i></a> Organization</span> <span class="w3-tag w3-round"><a href="#"><i class="fas fa-times"></i></a> Community</span> -->
+                                    </div>
+                                    <div class="filters-clearall">
+                                        <!-- <a href="#">Clear All</a> -->
+                                        <select class="col-filter sort-isotope">
+                                            <option value="">Sort By</option>
+                                            <option value="teams">Teams</option>
+                                            <option value="points">Total Points</option>
+                                            <option value="avgPoints" selected>Avg.Points</option>
+                                        </select>
+                                    </div>
+                                    <!-- THIS IS NEW CODE -->
+                                </div>
+                                <div id="tab1" class="w3-container leader-board-table-bg w3-animate-opacity tab tab1">
+                                    <div class="leader-board-heading-container">
+                                        <div class="table-heading-part1">
+                                            <div class="inner-table-heading-part1 table-heading-text text-center"> # </div>
+                                            <div class="inner-table-heading-part2 table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Name </div>
+                                        </div>
+                                        <div class="table-heading-part2">
+                                            <div class="inner-table-heading-part3 text-center table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                            <div class="inner-table-heading-part4 text-center table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-container">
+                                        <!--Team Member Start -->
+                                        <div class="table-row gold">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">1</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Madhvendra Singh<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    1000
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Monu </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row sliver">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">2</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Parul Saini<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    456
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    3
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row bronze">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">3</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Nihar Jain<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    678
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    6
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">4</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Naveen Sharma<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    674
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">5</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Jatin Jain<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    673
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row highlight-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">6</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Jirin Jain<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    670
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">7</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Pingaksh Pareek<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    668
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">8</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Andrew Heston<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    650
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">9</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Andrew Heston<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    600
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">10</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Andrew Heston<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    550
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">11</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Andrew Heston<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    549
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                    </div>
+                                    <div class="hightlight-ranking-container">
+                                        <div class="highlight-ranking-deatils"> <i class="fas fa-chevron-up"></i> Individual Ranking <strong> 40/125 </strong> <span class="ranking-increase"> <i class="fas fa-arrow-up"></i> +2</span> </div>
+                                        <!--Team Member Start -->
+                                        <div class="table-row highlight-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">6</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Andrew Heston<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    500
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                    </div>
+                                </div>
+                                <div id="tab2" class="w3-container  leader-board-table-bg w3-animate-opacity tab tab1" style="display:none">
+                                    <div class="leader-board-heading-container">
+                                        <div class="table-heading-part1">
+                                            <div class="inner-table-heading-part1 table-heading-text text-center"> # </div>
+                                            <div class=".inner-table-heading-part2 table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Name </div>
+                                        </div>
+                                        <div class="table-heading-part2">
+                                            <div class="inner-table-heading-part3 text-center table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                            <div class="inner-table-heading-part4 text-center table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-container">
+                                        <!--Team Member Start -->
+                                        <div class="table-row gold">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">1</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    499
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row sliver">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">2</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    1000
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row bronze">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">3</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    1000
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">4</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    1000
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">7</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    1000
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">6</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    1000
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">7</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    1000
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">8</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    987
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    6
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">9</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    345
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    8
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">10</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    123
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    9
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                        <!--Team Member Start -->
+                                        <div class="table-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">11</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> <img src="http://demo.arkinfotec.in/active-thriving/team-img.png"></a> </div>
+                                                        </div>
+                                                        <div class="member-details"> <a href="javascript:void(0)" onclick="openTeammembersModal()"> Andrew Heston </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    345
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    2
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                    </div>
+                                    <div class="hightlight-ranking-container">
+                                        <div class="highlight-ranking-deatils"> <i class="fas fa-chevron-up"></i> Team Ranking <strong> 40/125 </strong> <span class="ranking-increase"> <i class="fas fa-arrow-up"></i> +2</span> </div>
+                                        <!--Team Member Start -->
+                                        <div class="table-row highlight-row">
+                                            <div class="team-left-details-container">
+                                                <div class="number-count">6</div>
+                                                <div class="team-member-deatils">
+                                                    <div class="team-member-thumb">
+                                                        <div class="member-photo-container">
+                                                            <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                        </div>
+                                                        <div class="member-details"> Andrew Heston<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-right-details-container">
+                                                <div class="points blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                    1000
+                                                </div>
+                                                <div class="trophy blue-txt">
+                                                    <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                    7
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Team Member End -->
+                                    </div>
+                                </div>
+                
+                
+                                <div id="tab3" class="w3-container  leader-board-table-bg  w3-animate-opacity tab tab1 tab3 xs-show-avg-points" style="display:none">
+                                    <div class="leader-board-heading-container">
+                                        <div class="table-heading-part1">
+                                            <div class="inner-table-heading-part1 table-heading-text text-center"> # </div>
+                                            <div class=".inner-table-heading-part2 table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/company.png"> Name </div>
+                                        </div>
+                                        <div class="table-heading-part2">
+                                            <!-- THIS IS NEW CODE -->
+                                            <!--Data attribute added-->
+                                            <div class="sort-isotope-click inner-table-heading-part3 text-center table-heading-text org-heading-total-teams" data-sortbyval="teams"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Teams </div>
+                                            <!-- CHANGES class name & Data attribute added -->
+                                            <div class="sort-isotope-click inner-table-heading-part5 text-center table-heading-text org-heading-total-points" data-sortbyval="points"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Total Points </div>
+                                            <!-- <div class="inner-table-heading-part3 text-center table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Total Points </div> -->
+                                            <!--Data attribute added-->
+                                            <div class="sort-isotope-click inner-table-heading-part4 text-center table-heading-text org-heading-avg-points
+                
+                
+                " data-sortbyval="avgPoints"> <img src="http://demo.arkinfotec.in/active-thriving/star.png"> Avg.Points </div>
+                                            <!-- THIS IS NEW CODE -->
+                                        </div>
+                                    </div>
+                                    <div class="scroll-container">
+                                        <div class="grid">
+                                            <!--Team Member Start -->
+                                            <div class="table-row gold">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">1</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 1 <br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        798
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        987
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        3
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row sliver">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">2</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 2 <br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        658
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        999
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        5
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row bronze">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">3</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 3<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        689
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        766
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        6
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">5</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 4<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        987
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        453
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        4
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row highlight-row">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">6</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 5<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        123
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        654
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        9
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">7</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 6<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        675
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        877
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        9
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">8</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 7<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        243
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        876
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        8
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">9</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 8<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        675
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        986
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        10
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">10</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 9<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        224
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        897
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                            <!--Team Member Start -->
+                                            <div class="table-row">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">11</div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/company-logo.jpg"> </div>
+                                                            </div>
+                                                            <div class="member-details"> Organisation 10<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        655
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        980
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        11
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                        </div>
+                                        <div class="hightlight-ranking-container">
+                                            <div class="highlight-ranking-deatils"> <i class="fas fa-chevron-up"></i> Organisation Ranking <strong> 40/125 </strong> <span class="ranking-increase ranking-decrease"> <i class="fas fa-arrow-up"></i> -1</span> </div>
+                                            <!--Team Member Start -->
+                                            <div class="table-row highlight-row">
+                                                <div class="team-left-details-container">
+                                                    <div class="number-count">5 </div>
+                                                    <div class="team-member-deatils">
+                                                        <div class="team-member-thumb">
+                                                            <div class="member-photo-container">
+                                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png"> </div>
+                                                            </div>
+                                                            <div class="member-details">Organisation 5<br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                                <div class="team-right-details-container">
+                                                    <div class="points blue-txt org-total-teams">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/team.png"> Total Teams </div>
+                                                        123
+                                                    </div>
+                                                    <div class="points blue-txt org-total-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                                        654
+                                                    </div>
+                                                    <div class="trophy blue-txt org-avg-points">
+                                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                                        9
+                                                    </div>
+                                                </div>
+                                                <!-- THIS IS NEW CODE -->
+                                            </div>
+                                            <!--Team Member End -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Team page Start -->
+                    <div class="right-col"></div>
+                </div>
+                <!-- partial -->
+                <!-- Filtermodal Start -->
+                <div id="filter-modal" class="w3-modal w3-animate-opacity filter-modal" style="display: none;">
+                    <div class="w3-modal-content w3-card-4 w3-animate-opacity w3-modal-rounded filter-modal-sm"> <span onclick="closeFilterModal()" class="w3-button w3-display-topright"> <i class="fas fa-times"></i> </span>
+                        <div class="filter-modal-container">
+                            <h2>Filter Individuals</h2>
+                            <div class="form-filed1">
+                                <div class="filter-option-container">
+                                    <select class="filter-option">
+                                        <option>Area </option>
+                                    </select>
+                                </div>
+                                <div class="filter-option-container">
+                                    <select class="filter-option">
+                                        <option>Location </option>
+                                    </select>
+                                </div>
+                                <div class="filter-option-container">
+                                    <select class="filter-option">
+                                        <option>Organisation </option>
+                                    </select>
+                                </div>
+                                <div class="filter-option-container">
+                                    <select class="filter-option">
+                                        <option>Community</option>
+                                    </select>
+                                </div>
+                                <div class="applybtn-container">
+                                    <button class="apply-btn"> Go </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filtermodal Modal End -->
+                <!-- Filtermodal Start -->
+                <div id="filter-modal1" class="w3-modal w3-animate-opacity filter-modal" style="display: none;">
+                    <div class="w3-modal-content w3-card-4 w3-animate-opacity w3-modal-rounded filter-modal-sm"> <span onclick="closeFilterModal1()" class="w3-button w3-display-topright"> <i class="fas fa-times"></i> </span>
+                        <div class="filter-modal-container">
+                            <h2>Filter Teams </h2>
+                            <div class="form-filed1">
+                                <div class="filter-option-container">
+                                    <select class="filter-option">
+                                        <option>Area </option>
+                                    </select>
+                                </div>
+                                <div class="filter-option-container">
+                                    <select class="filter-option">
+                                        <option>Location </option>
+                                    </select>
+                                </div>
+                                <div class="filter-option-container">
+                                    <select class="filter-option">
+                                        <option>Organisation </option>
+                                    </select>
+                                </div>
+                                <div class="filter-option-container">
+                                    <select class="filter-option">
+                                        <option>Community</option>
+                                    </select>
+                                </div>
+                                <div class="filter-option-container">
+                                    <button class="apply-btn"> GO </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filtermodal Modal End -->
+                <!-- Teammembers modal Start -->
+                <div id="team-members-modal" class="w3-modal w3-animate-opacity filter-modal" style="display: none;">
+                    <div class="w3-modal-content w3-card-4 w3-animate-opacity w3-modal-rounded filter-modal-md"> <span onclick="closeTeammembersModal()" class="w3-button w3-display-topright"> <i class="fas fa-times"></i> </span>
+                        <div class="filter-modal-container team-members-modal">
+                            <h2>Fitness Fanatics </h2>
+                            <div class="leader-board-heading-container">
+                                <div class="table-heading-part1">
+                                    <div class=".inner-table-heading-part2 table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/team.png">Name </div>
+                                </div>
+                                <div class="table-heading-part2">
+                                    <div class="inner-table-heading-part3 text-center table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                    <div class="inner-table-heading-part4 text-center table-heading-text"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="team-left-details-container">
+                                    <div class="team-member-deatils">
+                                        <div class="team-member-thumb">
+                                            <div class="member-photo-container">
+                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png">
+                                                    <div class="ranking-position"> 1st</div>
+                                                </div>
+                                            </div>
+                                            <div class="member-details"> Andrew Heston </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-right-details-container">
+                                    <div class="points blue-txt">
+                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                        1000
+                                    </div>
+                                    <div class="trophy blue-txt">
+                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                        7
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="team-left-details-container">
+                                    <div class="team-member-deatils">
+                                        <div class="team-member-thumb">
+                                            <div class="member-photo-container">
+                                                <div class="team-member-photo"> <img src="http://demo.arkinfotec.in/active-thriving/member1.png">
+                                                    <div class="ranking-position">2nd</div>
+                                                </div>
+                                            </div>
+                                            <div class="member-details"> Andrew Heston </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-right-details-container">
+                                    <div class="points blue-txt">
+                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/medal.png"> Points </div>
+                                        1000
+                                    </div>
+                                    <div class="trophy blue-txt">
+                                        <div class="mobile-points-heading"> <img src="http://demo.arkinfotec.in/active-thriving/trophy.png"> Trophies </div>
+                                        7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+					
+				
+			
+            
+            </div>
+			  
+
+			
+
+		
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+	<script src="leadscript.js"></script>
+</body>
+</html>
